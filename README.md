@@ -32,3 +32,6 @@ In order to use:
 
 # Presentation
 ![Simple route](https://s5.gifyu.com/images/2020-02-19_23-07-29.gif)
+
+# Download
+Bulit binaries for MS Windows: https://github.com/morsisko/Interactive-Pathfinder/releases/
