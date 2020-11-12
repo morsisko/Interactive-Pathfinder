@@ -1,5 +1,15 @@
 # Interactive-Pathfinder
-An interactive program in which you can follow A* or Dijkstra's algorithm step by step on a map grid. Bulit using C++ and SFML.
+An interactive program in which you can follow A* or Dijkstra's algorithm step by step on a map grid. Built using C++ and SFML.
+
+# Compilation
+Tested on Windows and Linux using SFML 2.5
+
+## Visual Studio
+Run the .sln and set proper SFML's include and lib paths in solution settings, then press F5
+
+## Makefile
+If your SFML is installed in non-standard path you need to edit the very first lines of Makefile and set correct path to SFML.
+Otherwise just type `make` in your shell.
 
 # Usage
 Use `left mouse` button to put an obstacle on the map.
