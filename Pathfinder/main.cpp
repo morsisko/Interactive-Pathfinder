@@ -9,8 +9,11 @@ int main()
 {
 	CSimpleIniA ini;
 	if (ini.LoadFile("config.ini") != SI_OK)
+	{
+		std::cout << "Couldn't load config.ini (is it in the source folder?)" << std::endl;
 		return -1;
-
+	}
+		
 	const int WINDOW_WIDTH = atoi(ini.GetValue("window", "width", "1024"));
 	const int WINDOW_HEIGTH = atoi(ini.GetValue("window", "height", "768"));
 	const int MAP_WIDTH = atoi(ini.GetValue("map", "width", "20"));
@@ -38,7 +41,11 @@ int main()
 	sf::RectangleShape rect;
 	sf::Text text;
 	sf::Font font;
-	font.loadFromFile("arial.ttf");
+	if (!font.loadFromFile("arial.ttf"))
+	{
+		std::cout << "Couldn't load arial.ttf (is it in the source folder?)" << std::endl;
+		return -1;
+	}
 	rect.setSize(sf::Vector2f(BOX_WIDTH_HEIGHT, BOX_WIDTH_HEIGHT));
 	rect.setOutlineColor(sf::Color::Black);
 	rect.setFillColor(sf::Color::White);
