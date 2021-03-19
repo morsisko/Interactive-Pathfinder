@@ -41,7 +41,7 @@ In order to use:
 * `Dijkstra` algorithm - set `algorithm` property to 1 inside `config.ini`
 
 # Presentation
-![Simple route](https://s5.gifyu.com/images/2020-02-19_23-07-29.gif)
+![Simple route](presentation.gif)
 
 # Download
 Built binaries for MS Windows: https://github.com/morsisko/Interactive-Pathfinder/releases/
